@@ -10,7 +10,7 @@ export function Footer() {
     return (
         <div className="relative">
             <footer className="bg-gray-900 px-8 pt-20 bg-cover bg-no-repeat bg-center overlay"
-                    style={{backgroundImage: `url("/image/bg2.jpg")`}}>
+                    style={{backgroundImage: `url("./image/bg2.jpg")`}}>
                 <div className="container mx-auto relative">
                     <div className="flex flex-wrap justify-center gap-8 md:justify-between">
                         <div className="text-center md:text-left z-10">

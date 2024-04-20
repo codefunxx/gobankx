@@ -7,7 +7,7 @@ import {Button, Typography} from "@material-tailwind/react";
 function Hero() {
     return (
         <div className="relative w-full bg-cover bg-no-repeat bg_img"
-             style={{backgroundImage: `url("/image/bg2.jpg")`}}>
+             style={{backgroundImage: `url("./image/bg2.jpg")`}}>
             <div>
                 <header className="grid !min-h-[16rem] px-8">
                     <div
