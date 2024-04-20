@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.faq-section {
+    position: relative;
+}
+.overflow-hidden {
+    overflow: hidden !important;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+@media (min-width: 992px){
+    .faq-section .faq {
+        margin-top: 20px;
+    }
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+.faq {
+    display: block;
+    unicode-bidi: isolate;
+}
+.justify-content-between {
+    justify-content: space-between !important;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x)* -.5);
+    margin-left: calc(var(--bs-gutter-x)* -.5);
+}
+.faq-wrapper{
+    unicode-bidi: isolate;
+}
+.col-lg-6 {
+    display: block;
+    unicode-bidi: isolate;
+}
+.e-accordion .e-acrdn-item {
+    text-align: center;
+    color: pink !important;
+    background-color: #2fa1ff;
+}
+.MuiPaper-root {
+    color: white !important;
+    background-color: #2E0327 !important;
+    border: 1px solid rgba(255, 200, 39, 0.15) !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 35px;
+}
+.MuiAccordionSummary-root .Mui-expanded{
+    color: darkorange !important;
+}
+.MuiAccordionSummary-expandIconWrapper{
+    color: white !important;
+}

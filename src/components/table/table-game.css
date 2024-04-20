@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.th-header{
+    background-image: linear-gradient(0deg, rgb(255, 156, 25) 40%, rgb(255, 221, 45) 110%);
+    padding: 10px 15px;
+    color: #1f1f23;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+.td-body{
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+.td-body-text1{
+    color: #c7254e !important;
+}
+.color-content-even{
+    background-color: #2E0327 !important;
+}
+.color-content-odd{
+    background-color: #350B2D !important;
+}
+
