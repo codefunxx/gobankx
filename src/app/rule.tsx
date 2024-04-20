@@ -102,7 +102,7 @@ export function Rule() {
                                 <AccordionDetails>
                                     Riêng đối với các giao dịch chuyển từ VCB qua VCB kết quả sẽ là
                                     số giao dịch (sau khi chuyển khoản, khách hàng vào mục tra cứu/sao kê
-                                    > tài khoản > bấm vào giao dịch sẽ thấy số giao dịch)
+                                    &gt; tài khoản &gt; bấm vào giao dịch sẽ thấy số giao dịch)
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
