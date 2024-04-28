@@ -75,7 +75,7 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between lg:px-6">
-        <a onClick={() => handleNavigate('/')} >
+        <a href={'https://codefunxx.github.io/gobankx/'} >
           <Image width={180} height={60} src="./logos/gobank-v.png" alt="metamask" className="logo-img py-[10px] pl-[10px]"/>
         </a>
         <ul
@@ -83,7 +83,7 @@ export function Navbar() {
             isScrolling ? "text-white" : "text-white"
           }`}
         >
-          <a href={'/nvngay'}>
+          <a href={'https://codefunxx.github.io/gobankx/nvngay'}>
             <text className="font-bold text-xl">
               Nhiệm vụ ngày
             </text>
@@ -105,7 +105,7 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <a href="/nvngay" >
+            <a href="https://codefunxx.github.io/gobankx/nvngay" >
               <text className="font-bold text-base text-black">
                 Nhiệm vụ ngày
               </text>
