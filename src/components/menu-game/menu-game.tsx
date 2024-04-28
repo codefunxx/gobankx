@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
 
-export function MenuGame() {
+export function MenuGame({ onData }) {
 
     const [selectedMenu, setSelectedMenu] = useState(0);
     const [open, setOpen] = useState(false);
@@ -15,6 +15,7 @@ export function MenuGame() {
         if (open) {
             setOpen(false);
         }
+        onData(menu);
     };
     const handleOpenMenuGame = () => {
         if (open) {
@@ -36,7 +37,7 @@ export function MenuGame() {
                 <div className={'max-w-[300px] relative'}>
                     {open ? (<CloseIcon fontSize="large" className={'absolute close-icon cursor-pointer'} onClick={() => closeMenu()}/>):''}
                     {open ? (<div className="py-6 px-10">DANH SÁCH GAME</div>):''}
-                    <div className={selectedMenu == 1 ? classNameS : className} onClick={() => handleMenuClick(1)}>CHẴN LẺ</div>
+                    <div className={selectedMenu == 1 ? classNameS : className} onClick={() => {handleMenuClick(1)}}>CHẴN LẺ</div>
                     <div className={selectedMenu == 2 ? classNameS : className} onClick={() => handleMenuClick(2)}>TÀI XỈU</div>
                     <div className={selectedMenu == 3 ? classNameS : className} onClick={() => handleMenuClick(3)}>CLTX+2</div>
                     <div className={selectedMenu == 4 ? classNameS : className} onClick={() => handleMenuClick(4)}>GẤP 3</div>

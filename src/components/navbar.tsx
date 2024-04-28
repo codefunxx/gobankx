@@ -68,8 +68,8 @@ export function Navbar() {
           isScrolling ? " sticky" : ""
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between lg:px-6 sm:px-0">
-        <Image width={180} height={60} src="./logos/gobank-v.png" alt="metamask" className="logo-img"/>
+      <div className="container mx-auto flex items-center justify-between lg:px-6">
+        <Image width={180} height={60} src="./logos/gobank-v.png" alt="metamask" className="logo-img py-[10px] pl-[10px]"/>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-white" : "text-white"
@@ -88,9 +88,9 @@ export function Navbar() {
           className="ml-auto inline-block lg:hidden"
         >
           {open ? (
-            <XMarkIcon strokeWidth={2} className="h-6 w-6" />
+            <XMarkIcon strokeWidth={2} className="h-8 w-8" />
           ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
+            <Bars3Icon strokeWidth={2} className="h-8 w-8" />
           )}
         </Button>
       </div>
@@ -98,7 +98,7 @@ export function Navbar() {
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <a href="#">
-              <text className="font-bold text-xl text-black">
+              <text className="font-bold text-base text-black">
                 Nhiệm vụ ngày
               </text>
             </a>

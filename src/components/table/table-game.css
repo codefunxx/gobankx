@@ -24,4 +24,8 @@
 .color-content-odd{
     background-color: #350B2D !important;
 }
+.table-container {
+    width: 100%; /* Đảm bảo rằng vùng hiển thị của bảng sẽ không vượt quá kích thước của trang web */
+    overflow-x: auto;
+}
 
