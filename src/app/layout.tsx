@@ -1,7 +1,12 @@
+"use client";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { FixedPlugin, Layout } from "@/components";
+import {FixedPlugin, Footer, Layout, Navbar} from "@/components";
+import Hero from "@/app/hero";
+import {useEffect, useState} from "react";
+import Loading from "@/components/loading/loading";
+import { useRouter } from 'next/router';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -9,17 +14,25 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "NextJS Tailwind App Presentation Page",
-  description:
-    "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections.",
-};
+// export const metadata: Metadata = {
+//   title: "NextJS Tailwind App Presentation Page",
+//   description:
+//     "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections.",
+// };
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  },[])
   return (
     <html lang="en">
       <head>
@@ -33,10 +46,15 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <Layout>
-          {children}
-          {/*<FixedPlugin />*/}
-        </Layout>
+      {loading? <Loading/> : (
+          <Layout>
+            <Navbar/>
+            <Hero />
+            {children}
+            {/*<FixedPlugin />*/}
+            <Footer />
+          </Layout>
+      )}
       </body>
     </html>
   );

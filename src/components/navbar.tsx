@@ -8,6 +8,8 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -32,6 +34,10 @@ function NavItem({ children, href }: NavItemProps) {
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
   const [isScrolling, setIsScrolling] = React.useState(false);
+  const router = useRouter();
+  const handleNavigate = (url) => {
+    router.push(url);
+  }
 
   function handleOpen() {
     setOpen((cur) => !cur);
@@ -69,17 +75,19 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between lg:px-6">
-        <Image width={180} height={60} src="./logos/gobank-v.png" alt="metamask" className="logo-img py-[10px] pl-[10px]"/>
+        <a href={'/'} >
+          <Image width={180} height={60} src="./logos/gobank-v.png" alt="metamask" className="logo-img py-[10px] pl-[10px]"/>
+        </a>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-white" : "text-white"
           }`}
         >
-          <NavItem>
+          <a href={'/nvngay'}>
             <text className="font-bold text-xl">
               Nhiệm vụ ngày
             </text>
-          </NavItem>
+          </a>
         </ul>
         <Button
           variant="text"
@@ -97,7 +105,7 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <a href="#">
+            <a href="/nvngay" >
               <text className="font-bold text-base text-black">
                 Nhiệm vụ ngày
               </text>

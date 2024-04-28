@@ -16,7 +16,6 @@ import Loading from "@/components/loading/loading";
 
 export default function Campaign() {
     const [loading, setLoading] = useState(true);
-    // const location = useLocation()
     useEffect(() => {
         setLoading(true)
         setTimeout(() => {
@@ -24,21 +23,16 @@ export default function Campaign() {
         }, 2000)
     },[])
   return (
-    <>
-        {loading? <Loading/> :
-            <>
-                <Navbar />
-                <Hero />
-                <Games />
-                <Feature />
-                <HistoryPlay />
-                <History />
-                <TopRich />
-                <Rule />
-                <Footer />
-            </>
-        }
-    </>
-
+        <>
+            {/*<Navbar />*/}
+            {/*<Hero />*/}
+            <Games />
+            <Feature />
+            <HistoryPlay />
+            <History />
+            <TopRich />
+            <Rule />
+            {/*<Footer />*/}
+        </>
   );
 }
