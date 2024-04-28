@@ -37,23 +37,23 @@ export function Footer() {
                             </a>
                         </Typography>
 
-                        <div className="flex gap-2">
-                            <IconButton variant="text" color="white">
-                                <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
-                            </IconButton>
-                            <IconButton variant="text" color="white">
-                                <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
-                            </IconButton>
-                            <IconButton variant="text" color="white">
-                                <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-                            </IconButton>
-                            <IconButton variant="text" color="white">
-                                <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
-                            </IconButton>
-                            <IconButton variant="text" color="white">
-                                <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
-                            </IconButton>
-                        </div>
+                        {/*<div className="flex gap-2">*/}
+                        {/*    <IconButton variant="text" color="white">*/}
+                        {/*        <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>*/}
+                        {/*    </IconButton>*/}
+                        {/*    <IconButton variant="text" color="white">*/}
+                        {/*        <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>*/}
+                        {/*    </IconButton>*/}
+                        {/*    <IconButton variant="text" color="white">*/}
+                        {/*        <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>*/}
+                        {/*    </IconButton>*/}
+                        {/*    <IconButton variant="text" color="white">*/}
+                        {/*        <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>*/}
+                        {/*    </IconButton>*/}
+                        {/*    <IconButton variant="text" color="white">*/}
+                        {/*        <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>*/}
+                        {/*    </IconButton>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </footer>

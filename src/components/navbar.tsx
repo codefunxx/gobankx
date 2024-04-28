@@ -81,7 +81,7 @@ export function Navbar() {
             </text>
           </NavItem>
         </ul>
-        <IconButton
+        <Button
           variant="text"
           color={isScrolling ? "white" : "white"}
           onClick={handleOpen}
@@ -92,16 +92,16 @@ export function Navbar() {
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </Button>
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-              <text className="font-bold text-xl">
+            <a href="#">
+              <text className="font-bold text-xl text-black">
                 Nhiệm vụ ngày
               </text>
-            </NavItem>
+            </a>
           </ul>
         </div>
       </Collapse>
